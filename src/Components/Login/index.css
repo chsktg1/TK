@@ -1,0 +1,48 @@
+.justBG{
+    width: 50vw;
+}
+.onlySmallScreen{
+    display: none;
+}
+
+.cssHelper{
+    text-align: center;
+}
+
+@media screen and (max-width:768px) {
+    .notInSmallScreen{
+        display: none;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .extra{
+        order: 2;
+    }
+    .cssHelper{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 40px;
+    }
+    .justBG{
+        display: none;
+    }
+    .onlySmallScreen{
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+
+    .justBGSmallScreen{
+        margin-right: -10px;
+        width: 387px;
+        height: 387px;
+    }
+
+    .smallImg{
+        border-bottom-left-radius: 249px;
+        width: 387px;
+    }
+}
